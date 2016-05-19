@@ -36,7 +36,9 @@ class SampleData: NSObject {
 
     /// An array of `Activity`s used in the app.
     let activities: [Activity] = [
-        OutdoorWalk()
+        OutdoorWalk(),
+        lift()
+       // BackPain()
     ]
     
     /*

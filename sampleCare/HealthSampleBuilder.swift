@@ -28,24 +28,18 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import CareKit
+import ResearchKit
 
 /**
- Protocol that defines the properties and methods for sample activities.
+ A protocol that defines the methods and properties required to be able to save
+ an `ORKTaskResult` to a `ORKCarePlanStore` with an associated `HKQuantitySample`.
  */
-protocol Activity {
-    var activityType: ActivityType { get }
+protocol HealthSampleBuilder {
+    var quantityType: HKQuantityType { get }
     
-    func carePlanActivity() -> OCKCarePlanActivity
-}
-
-
-/**
- Enumeration of strings used as identifiers for the `SampleActivity`s used in
- the app.
- */
-enum ActivityType: String {
-    case OutdoorWalk
-    case lift
-
+    var unit: HKUnit { get }
+    
+    func buildSampleWithTaskResult(result: ORKTaskResult) -> HKQuantitySample
+    
+    func localizedUnitForSample(sample: HKQuantitySample) -> String
 }
