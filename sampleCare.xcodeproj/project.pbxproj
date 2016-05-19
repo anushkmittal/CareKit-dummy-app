@@ -23,6 +23,7 @@
 		2B14EEC11CEDB349005A1E56 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEBF1CEDB349005A1E56 /* Assessment.swift */; };
 		2B14EEC21CEDB349005A1E56 /* lift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC01CEDB349005A1E56 /* lift.swift */; };
 		2B14EEC41CEDB5BE005A1E56 /* HealthSampleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC31CEDB5BE005A1E56 /* HealthSampleBuilder.swift */; };
+		2B14EEC61CEDB843005A1E56 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		2B14EEBF1CEDB349005A1E56 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		2B14EEC01CEDB349005A1E56 /* lift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lift.swift; sourceTree = "<group>"; };
 		2B14EEC31CEDB5BE005A1E56 /* HealthSampleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthSampleBuilder.swift; sourceTree = "<group>"; };
+		2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				2B058C731CED83F900C8F196 /* AppDelegate.swift */,
 				2B058C751CED83F900C8F196 /* ViewController.swift */,
 				2B058CCA1CED86F800C8F196 /* CarePlanStoreManager.swift */,
+				2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */,
 				2B058C771CED83F900C8F196 /* Main.storyboard */,
 				2B058C7A1CED83F900C8F196 /* Assets.xcassets */,
 				2B058C7C1CED83F900C8F196 /* LaunchScreen.storyboard */,
@@ -290,6 +293,7 @@
 			files = (
 				2B058CE71CED8C6100C8F196 /* Activity.swift in Sources */,
 				2B058C761CED83F900C8F196 /* ViewController.swift in Sources */,
+				2B14EEC61CEDB843005A1E56 /* NSCalendar+Dates.swift in Sources */,
 				2B058CCB1CED86F800C8F196 /* CarePlanStoreManager.swift in Sources */,
 				2B14EEC41CEDB5BE005A1E56 /* HealthSampleBuilder.swift in Sources */,
 				2B058C741CED83F900C8F196 /* AppDelegate.swift in Sources */,
