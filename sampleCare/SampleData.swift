@@ -29,8 +29,6 @@
  */
 
 import CareKit
-import ResearchKit
-
 
 class SampleData: NSObject {
     
