@@ -10,107 +10,75 @@ import UIKit
 import CareKit
 import ResearchKit
 
-
 class ViewController: UIViewController {
     
     private let sampleData: SampleData
-
+    
     private let storeManager = CarePlanStoreManager.sharedCarePlanStoreManager
     
     private var symptomTrackerViewController: OCKSymptomTrackerViewController!
-
-
-   // private var careCardViewController: OCKCareCardViewController!
-
     
+    private var taskViewController: ORKTaskViewController!
+    
+    // private var careCardViewController: OCKCareCardViewController!
     
     required init?(coder aDecoder: NSCoder)
-    
+        
     {
         
         sampleData = SampleData(carePlanStore: storeManager.store)
         
-
-
         super.init(coder: aDecoder)
         
-//symptomTrackerViewController = createSymptomTrackerViewController()
-     //   careCardViewController = createCareCardViewController()
+        // symptomTrackerViewController = createSymptomTrackerViewController()
+        // careCardViewController = createCareCardViewController()
         
-       // let careCardViewController = OCKCareCardViewController(carePlanStore: storeManager.store)
-        //self.navigationController?.pushViewController(careCardViewController, animated: true)
+        // let careCardViewController = OCKCareCardViewController(carePlanStore: storeManager.store)
+        // self.navigationController?.pushViewController(careCardViewController, animated: true)
         
         storeManager.delegate = self
-
+        
     }
     
     /*
-    private func createCareCardViewController() -> OCKCareCardViewController {
-        let viewController = OCKCareCardViewController(carePlanStore: storeManager.store)
-        
-        // Setup the controller's title and tab bar item
-        viewController.title = NSLocalizedString("Care Card", comment: "")
-        //viewController.tabBarItem = UITabBarItem(title: viewController.title, image: UIImage(named:"carecard"), selectedImage: UIImage(named: "carecard-filled"))
-        return viewController
-    }
-    
-    */
-    
-    
-    
-
-    
+     private func createCareCardViewController() -> OCKCareCardViewController {
+     let viewController = OCKCareCardViewController(carePlanStore: storeManager.store)
+     
+     // Setup the controller's title and tab bar item
+     viewController.title = NSLocalizedString("Care Card", comment: "")
+     // viewController.tabBarItem = UITabBarItem(title: viewController.title, image: UIImage(named:"carecard"), selectedImage: UIImage(named: "carecard-filled"))
+     return viewController
+     }
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      //  self.navigationController?.pushViewController(careCardViewController, animated: true)
-
-        
-
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated...
     }
-
-
     
     @IBAction func click(sender: AnyObject) {
-        print("click")
         LC_LOAD_DYLIB
-        
         let careCardViewController = OCKCareCardViewController(carePlanStore: storeManager.store)
+        // remember to set delegate here when you implement
+        self.navigationController?.showViewController(careCardViewController, sender: self)
         print("click")
-        self.navigationController?.pushViewController(careCardViewController, animated: true)
-        print("click")
-        
-       // self.navigationController?.pushViewController(careCardViewController, animated: true)
     }
-
+    
     @IBAction func click1(sender: AnyObject) {
-        
-        print("click1")
-       /* let symptomTrackerController = OCKSymptomTrackerViewController(carePlanStore: storeManager.store)
-        
-        self.navigationController?.pushViewController(symptomTrackerController, animated: true)
-        */
-        
-        
         let symptomTrackerController = OCKSymptomTrackerViewController(carePlanStore: storeManager.store)
-        print("click1")
-        // presenting the view controller modally
-       // presentViewController(symptomTrackerController, animated: true, completion: nil)
-        self.navigationController?.pushViewController(symptomTrackerController, animated: true)
+        symptomTrackerController.delegate = self
+        self.navigationController?.showViewController(symptomTrackerController, sender: self)
         print("click1")
     }
     
 }
 
-
 extension ViewController: OCKSymptomTrackerViewControllerDelegate {
-    
     /// Called when the user taps an assessment on the `OCKSymptomTrackerViewController`.
     func symptomTrackerViewController(viewController: OCKSymptomTrackerViewController, didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
         // Lookup the assessment the row represents.
@@ -128,12 +96,9 @@ extension ViewController: OCKSymptomTrackerViewControllerDelegate {
         // Show an `ORKTaskViewController` for the assessment's task.
         let taskViewController = ORKTaskViewController(task: sampleAssessment.task(), taskRunUUID: nil)
         taskViewController.delegate = self
-        
         presentViewController(taskViewController, animated: true, completion: nil)
     }
 }
-
-
 
 extension ViewController: ORKTaskViewControllerDelegate {
     
@@ -145,7 +110,6 @@ extension ViewController: ORKTaskViewControllerDelegate {
         
         // Make sure the reason the task controller finished is that it was completed.
         guard reason == .Completed else { return }
-        
         // Determine the event that was completed and the `SampleAssessment` it represents.
         guard let event = symptomTrackerViewController.lastSelectedAssessmentEvent,
             activityType = ActivityType(rawValue: event.activity.identifier),
@@ -219,7 +183,6 @@ extension ViewController: ORKTaskViewControllerDelegate {
     }
 }
 
-
 extension ViewController: CarePlanStoreManagerDelegate {
     
     /// Called when the `CarePlanStoreManager`'s insights are updated.
@@ -227,7 +190,7 @@ extension ViewController: CarePlanStoreManagerDelegate {
         // Update the insights view controller with the new insights.
         //insightsViewController.items = insights
         
-}
-
+    }
+    
 }
 

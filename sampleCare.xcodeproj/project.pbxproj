@@ -13,73 +13,72 @@
 		2B058C7B1CED83F900C8F196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B058C7A1CED83F900C8F196 /* Assets.xcassets */; };
 		2B058C7E1CED83F900C8F196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B058C7C1CED83F900C8F196 /* LaunchScreen.storyboard */; };
 		2B058CCB1CED86F800C8F196 /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B058CCA1CED86F800C8F196 /* CarePlanStoreManager.swift */; };
-		2B058CDF1CED876E00C8F196 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B058CD31CED873200C8F196 /* CareKit.framework */; };
-		2B058CE01CED876E00C8F196 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B058CD31CED873200C8F196 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B058CE51CED8C1600C8F196 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B058CE41CED8C1600C8F196 /* SampleData.swift */; };
 		2B058CE71CED8C6100C8F196 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B058CE61CED8C6100C8F196 /* Activity.swift */; };
 		2B058CE91CED8C7B00C8F196 /* OutdoorWalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B058CE81CED8C7B00C8F196 /* OutdoorWalk.swift */; };
-		2B14EEA31CEDA9D9005A1E56 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14EEA01CEDA9C9005A1E56 /* ResearchKit.framework */; };
-		2B14EEA41CEDA9D9005A1E56 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14EEA01CEDA9C9005A1E56 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B14EEC11CEDB349005A1E56 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEBF1CEDB349005A1E56 /* Assessment.swift */; };
 		2B14EEC21CEDB349005A1E56 /* lift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC01CEDB349005A1E56 /* lift.swift */; };
 		2B14EEC41CEDB5BE005A1E56 /* HealthSampleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC31CEDB5BE005A1E56 /* HealthSampleBuilder.swift */; };
-		2B14EEC61CEDB843005A1E56 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */; };
+		FAD5292F1CEDC354000EB513 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD5292C1CEDC335000EB513 /* ResearchKit.framework */; };
+		FAD529301CEDC354000EB513 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD5292C1CEDC335000EB513 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAD529341CEDC358000EB513 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD529251CEDC335000EB513 /* CareKit.framework */; };
+		FAD529351CEDC358000EB513 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD529251CEDC335000EB513 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2B058CD21CED873200C8F196 /* PBXContainerItemProxy */ = {
+		FAD529241CEDC335000EB513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */;
+			containerPortal = FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
 			remoteInfo = CareKit;
 		};
-		2B058CD41CED873200C8F196 /* PBXContainerItemProxy */ = {
+		FAD529261CEDC335000EB513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */;
+			containerPortal = FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
 			remoteInfo = CareKitTests;
 		};
-		2B058CE11CED876E00C8F196 /* PBXContainerItemProxy */ = {
+		FAD5292B1CEDC335000EB513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
-			remoteInfo = CareKit;
-		};
-		2B14EE9F1CEDA9C9005A1E56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */;
+			containerPortal = FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		2B14EEA11CEDA9C9005A1E56 /* PBXContainerItemProxy */ = {
+		FAD5292D1CEDC335000EB513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */;
+			containerPortal = FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
-		2B14EEA51CEDA9D9005A1E56 /* PBXContainerItemProxy */ = {
+		FAD529311CEDC354000EB513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */;
+			containerPortal = FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
+		FAD529361CEDC358000EB513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2B058CE31CED876E00C8F196 /* Embed Frameworks */ = {
+		FAD529331CEDC354000EB513 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B14EEA41CEDA9D9005A1E56 /* ResearchKit.framework in Embed Frameworks */,
-				2B058CE01CED876E00C8F196 /* CareKit.framework in Embed Frameworks */,
+				FAD529351CEDC358000EB513 /* CareKit.framework in Embed Frameworks */,
+				FAD529301CEDC354000EB513 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,15 +94,14 @@
 		2B058C7D1CED83F900C8F196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B058C7F1CED83F900C8F196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B058CCA1CED86F800C8F196 /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
-		2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../Music/carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		2B058CE41CED8C1600C8F196 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		2B058CE61CED8C6100C8F196 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2B058CE81CED8C7B00C8F196 /* OutdoorWalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutdoorWalk.swift; sourceTree = "<group>"; };
-		2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../../Music/ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		2B14EEBF1CEDB349005A1E56 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		2B14EEC01CEDB349005A1E56 /* lift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lift.swift; sourceTree = "<group>"; };
 		2B14EEC31CEDB5BE005A1E56 /* HealthSampleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthSampleBuilder.swift; sourceTree = "<group>"; };
-		2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
+		FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "CareKit-master/CareKit.xcodeproj"; sourceTree = "<group>"; };
+		FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B14EEA31CEDA9D9005A1E56 /* ResearchKit.framework in Frameworks */,
-				2B058CDF1CED876E00C8F196 /* CareKit.framework in Frameworks */,
+				FAD529341CEDC358000EB513 /* CareKit.framework in Frameworks */,
+				FAD5292F1CEDC354000EB513 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +120,8 @@
 		2B058C671CED83F900C8F196 = {
 			isa = PBXGroup;
 			children = (
-				2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */,
-				2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */,
+				FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */,
+				FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */,
 				2B058C721CED83F900C8F196 /* sampleCare */,
 				2B058C711CED83F900C8F196 /* Products */,
 			);
@@ -149,7 +147,6 @@
 				2B058C731CED83F900C8F196 /* AppDelegate.swift */,
 				2B058C751CED83F900C8F196 /* ViewController.swift */,
 				2B058CCA1CED86F800C8F196 /* CarePlanStoreManager.swift */,
-				2B14EEC51CEDB843005A1E56 /* NSCalendar+Dates.swift */,
 				2B058C771CED83F900C8F196 /* Main.storyboard */,
 				2B058C7A1CED83F900C8F196 /* Assets.xcassets */,
 				2B058C7C1CED83F900C8F196 /* LaunchScreen.storyboard */,
@@ -158,20 +155,20 @@
 			path = sampleCare;
 			sourceTree = "<group>";
 		};
-		2B058CCD1CED873200C8F196 /* Products */ = {
+		FAD5291C1CEDC335000EB513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B058CD31CED873200C8F196 /* CareKit.framework */,
-				2B058CD51CED873200C8F196 /* CareKitTests.xctest */,
+				FAD529251CEDC335000EB513 /* CareKit.framework */,
+				FAD529271CEDC335000EB513 /* CareKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B14EE9A1CEDA9C9005A1E56 /* Products */ = {
+		FAD5291F1CEDC335000EB513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B14EEA01CEDA9C9005A1E56 /* ResearchKit.framework */,
-				2B14EEA21CEDA9C9005A1E56 /* ResearchKitTests.xctest */,
+				FAD5292C1CEDC335000EB513 /* ResearchKit.framework */,
+				FAD5292E1CEDC335000EB513 /* ResearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,13 +183,13 @@
 				2B058C6C1CED83F900C8F196 /* Sources */,
 				2B058C6D1CED83F900C8F196 /* Frameworks */,
 				2B058C6E1CED83F900C8F196 /* Resources */,
-				2B058CE31CED876E00C8F196 /* Embed Frameworks */,
+				FAD529331CEDC354000EB513 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B058CE21CED876E00C8F196 /* PBXTargetDependency */,
-				2B14EEA61CEDA9D9005A1E56 /* PBXTargetDependency */,
+				FAD529321CEDC354000EB513 /* PBXTargetDependency */,
+				FAD529371CEDC358000EB513 /* PBXTargetDependency */,
 			);
 			name = sampleCare;
 			productName = sampleCare;
@@ -227,12 +224,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2B058CCD1CED873200C8F196 /* Products */;
-					ProjectRef = 2B058CCC1CED873200C8F196 /* CareKit.xcodeproj */;
+					ProductGroup = FAD5291C1CEDC335000EB513 /* Products */;
+					ProjectRef = FAD5291B1CEDC335000EB513 /* CareKit.xcodeproj */;
 				},
 				{
-					ProductGroup = 2B14EE9A1CEDA9C9005A1E56 /* Products */;
-					ProjectRef = 2B14EE991CEDA9C9005A1E56 /* ResearchKit.xcodeproj */;
+					ProductGroup = FAD5291F1CEDC335000EB513 /* Products */;
+					ProjectRef = FAD5291E1CEDC335000EB513 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -243,32 +240,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2B058CD31CED873200C8F196 /* CareKit.framework */ = {
+		FAD529251CEDC335000EB513 /* CareKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CareKit.framework;
-			remoteRef = 2B058CD21CED873200C8F196 /* PBXContainerItemProxy */;
+			remoteRef = FAD529241CEDC335000EB513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2B058CD51CED873200C8F196 /* CareKitTests.xctest */ = {
+		FAD529271CEDC335000EB513 /* CareKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CareKitTests.xctest;
-			remoteRef = 2B058CD41CED873200C8F196 /* PBXContainerItemProxy */;
+			remoteRef = FAD529261CEDC335000EB513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2B14EEA01CEDA9C9005A1E56 /* ResearchKit.framework */ = {
+		FAD5292C1CEDC335000EB513 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 2B14EE9F1CEDA9C9005A1E56 /* PBXContainerItemProxy */;
+			remoteRef = FAD5292B1CEDC335000EB513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2B14EEA21CEDA9C9005A1E56 /* ResearchKitTests.xctest */ = {
+		FAD5292E1CEDC335000EB513 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 2B14EEA11CEDA9C9005A1E56 /* PBXContainerItemProxy */;
+			remoteRef = FAD5292D1CEDC335000EB513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -293,7 +290,6 @@
 			files = (
 				2B058CE71CED8C6100C8F196 /* Activity.swift in Sources */,
 				2B058C761CED83F900C8F196 /* ViewController.swift in Sources */,
-				2B14EEC61CEDB843005A1E56 /* NSCalendar+Dates.swift in Sources */,
 				2B058CCB1CED86F800C8F196 /* CarePlanStoreManager.swift in Sources */,
 				2B14EEC41CEDB5BE005A1E56 /* HealthSampleBuilder.swift in Sources */,
 				2B058C741CED83F900C8F196 /* AppDelegate.swift in Sources */,
@@ -307,15 +303,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B058CE21CED876E00C8F196 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CareKit;
-			targetProxy = 2B058CE11CED876E00C8F196 /* PBXContainerItemProxy */;
-		};
-		2B14EEA61CEDA9D9005A1E56 /* PBXTargetDependency */ = {
+		FAD529321CEDC354000EB513 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ResearchKit;
-			targetProxy = 2B14EEA51CEDA9D9005A1E56 /* PBXContainerItemProxy */;
+			targetProxy = FAD529311CEDC354000EB513 /* PBXContainerItemProxy */;
+		};
+		FAD529371CEDC358000EB513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = FAD529361CEDC358000EB513 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CareKit-master/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = sampleCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anushkmittal.sampleCare;
@@ -439,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CareKit-master/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = sampleCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anushkmittal.sampleCare;
